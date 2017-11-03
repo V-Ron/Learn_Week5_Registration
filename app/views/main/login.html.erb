@@ -1,0 +1,8 @@
+<%=flash[:alert]%>
+<h3>You have successfully registered, <%= @user_info.first_name %>. Enter your login information to continue.</h3>
+
+<form action="logged_in" method="post">
+  <input type="text" name="user_login" placeholder="Username" />
+  <input type="text" name="password_login" placeholder="Password"/>
+  <input type="submit" name="submit" value="Submit"/>
+</form>

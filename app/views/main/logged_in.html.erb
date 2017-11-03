@@ -1,0 +1,16 @@
+<h3>You are logged in!</h3>
+
+<h3>Your info: </h3>
+First name: <%= @user_info.first_name %> <br />
+Last name: <%= @user_info.last_name %> <br />
+E-mail: <%= @user_info.email %> <br />
+Username: <%= @user_info.user %><br />
+Address: <%= @user_info.address %><br />
+City: <%= @user_info.city %><br />
+State: <%= @user_info.state %><br />
+Zip code:  <%= @user_info.zip %><br />
+Country:  <%= @user_info.country %><br />
+
+<form action="logout" method="post">
+  <input type="submit" name="logout" value="Log Out">
+</form>
